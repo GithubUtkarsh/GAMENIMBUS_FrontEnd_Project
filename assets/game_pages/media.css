@@ -1,0 +1,39 @@
+@media only screen and (max-width : 600px) {
+    #navbar  ul{
+        padding-left: 2rem;
+    }
+    .navbar_bg{
+        background-size:cover;
+        background-position: right;
+        position: static;
+    }
+    .game-image{
+        width: 80%;
+        margin-left: 5rem;
+    } 
+    body{
+        text-align: justify;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .main_heading h1{
+        font-size: 4rem;
+    }
+
+    .ss-image{
+        
+        margin:1rem 0;
+    }
+
+    footer > div > div{
+        margin-left: 12rem !important;
+
+    }
+    footer > div > section{
+        margin-left: 7rem !important;
+        text-align: center;
+    }
+     
+}

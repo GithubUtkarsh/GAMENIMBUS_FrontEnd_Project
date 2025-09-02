@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Pacifico&  family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Yeon+Sung&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Winky Sans';
+}
+html{
+    font-size:62.5% ;
+}
+body{
+    background: #780206;
+    background: -webkit-linear-gradient(45deg, #061161, #780206);
+    background: url(assets/images/background-6.jpg),linear-gradient(45deg, rgba(6, 17, 97,0), rgb(120, 2, 6,0));   
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    
+}
+
+.navbar_bg{
+    background: url(assets/images/banner_01.jpg),linear-gradient(60deg, rgba(6, 17, 97,0.7)    , rgba(120, 2, 6,0.7));
+    background-size: contain;
+    background-blend-mode:multiply;
+}
+.button_bg{
+    background-color:#061161;
+    color:white;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 3rem;
+    
+}
+.navbar_bg> div > form > input{
+    height: 3rem;
+}
+.button_bg:hover{
+    background-color: white;
+}
+.nav-link:hover{
+    color: #1689ee !important;
+}
+.inputStyle::placeholder{
+    font-size: 1.4rem;
+}
+
+.navbar-toggler-icon{
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.local_banner{
+    width: 90%; 
+    margin:5rem 0rem 0rem 6rem; 
+    opacity: 50%;
+}
+.dropdown-item{
+    font-size: 2.6rem;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 1px 1px black inset;
+}
+.dropdown-item:hover{
+    background:linear-gradient(60deg, rgb(1, 30, 255),rgb(255,255,255)    , rgb(253, 2, 10));
+    color: white;
+}
+.sectionImg{
+    width: 100%;
+    height: 31rem;
+    margin: 1rem;
+    object-fit:fill;
+    transition: box-shadow 0.3s ease;
+    z-index: -1;
+}
+.sectionImg_container{
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    height: 30rem;
+    opacity: 0.1;
+        
+}
+
+.sectionImg:hover{
+   box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(250, 249, 249, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+   transform: translateZ(10px) scale(1.05);
+   transition: transform .2s linear;
+}
+.prevStyle{
+    position: absolute;
+    top: 33rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 100% ;
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius:50%;
+}
+
+.banner{
+    margin: 10rem 0 5rem 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    top: 10%;
+}
+.banner .slider{
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    top: 13%;
+    object-fit: cover;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }
+    to{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+}
+.banner .slider .items{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc((var(--position) - 1)*(360 /var(--quantity)) * 1deg))
+        translateZ(50rem);
+}
+.banner .slider .items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gameImg{
+    height: 25rem;
+    border-radius: .5rem;
+}
+.carousel-inner{
+    width: 100%;
+    height: 75rem;
+}
+.card {
+  position: relative;
+  margin: 2rem;
+  height: 25rem;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: conic-gradient(red, yellow, green, cyan, blue, magenta);
+  z-index: -1;
+  border-radius: 1rem;
+  filter: blur(2rem);
+  opacity: 0;
+  transition:opacity 0.3s ease;
+}
+.card:hover::before {
+  opacity: 1;
+  
+}
+.card:hover{
+    transform: translateZ(50px) scale(1.05);
+      
+}
+.page{
+    height: 2rem;
+    margin-left: 65rem;
+    margin-bottom: 3rem;
+}
+.page ul{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background:linear-gradient(-45deg, rgb(2, 4, 24));
+    height: 20rem;
+}
+.social_logo{
+    height: 3rem;
+    margin: 2rem;
+}
+
+.footer_menu{
+    color: grey;
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+footer > p{
+    color: grey;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.footer_menu:hover{
+    color: #780206;
+}

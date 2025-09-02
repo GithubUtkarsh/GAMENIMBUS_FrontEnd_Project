@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Epic Quest Game - Bootstrap Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+            color: #c5c7cd;
+        }
+        .main_heading {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .main_heading h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffe7;
+            font-size: 3.5rem;
+            letter-spacing: 4px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00fffacc;
+        }
+        .main_heading p {
+            font-size: 1.2rem;
+            color: #68f2e9;
+            margin-top: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+        }
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.6rem 2rem;
+            background: #16213ecc;
+            border-radius: 15px;
+            border-left: 8px solid #00ffe7;
+            box-shadow: 0 6px 20px rgb(0 255 231 / 0.48);
+        }
+        h2 {
+            color: #00ffe7;
+            font-weight: 700;
+            font-size: 1.7rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #00ffe7;
+            padding-bottom: 0.3rem;
+        }
+        .text-highlight {
+            color: #ffd600;
+            font-weight: 700;
+        }
+        .screenshot, .game-image {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 4px 20px #00ffe7aa;
+            cursor: pointer;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .screenshot:hover, .game-image:hover {
+            transform: scale(1.06);
+            box-shadow: 0 8px 30px #00ffe7ff;
+        }
+        .download-btn {
+            background: #ffd600;
+            color: #0f2027;
+            font-weight: 800;
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 25px #ffd600cc;
+            text-decoration: none;
+            display: inline-block;
+            user-select: none;
+            transition: background-color 0.35s ease, transform 0.35s ease;
+        }
+        .download-btn:hover, .download-btn:focus {
+            background-color: #fff500;
+            transform: scale(1.1);
+            outline: none;
+            box-shadow: 0 0 40px #fff500ee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5" role="main">
+        <section class="main_heading">
+            <h1>Epic Quest: Dragon’s Legacy</h1>
+            <p>The ultimate fantasy <span class="text-highlight">adventure</span> awaits you!</p>
+        </section>
+
+        <section class="section" aria-labelledby="desc-heading">
+            <h2 id="desc-heading">Game Description</h2>
+            <p>Embark on a <span class="text-highlight">mythical journey</span> as the Dragonborn in Epic Quest: Dragon’s Legacy. Explore vast lands, conquer challenging enemies, and forge your destiny in an immersive open-world RPG with stunning visuals and deep storyline.</p>
+        </section>
+
+        <section class="section" aria-labelledby="game-image-heading">
+            <h2 id="game-image-heading">Game Image</h2>
+            <img src="https://images.unsplash.com/photo-1511910849309-0cf44dff61fa?auto=format&fit=crop&w=800&q=80" alt="Stunning in-game scene from Epic Quest with character and dragon" class="game-image" />
+        </section>
+
+        <section class="section" aria-labelledby="screenshot-heading">
+            <h2 id="screenshot-heading">Screenshot</h2>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Epic Quest game screenshot showing dragon soaring over mountain landscape" class="screenshot" />
+        </section>
+
+        <section class="section" aria-labelledby="requirements-heading">
+            <h2 id="requirements-heading">Requirements</h2>
+            <ul class="list-unstyled">
+                <li>OS: Windows 10 or later / macOS Big Sur</li>
+                <li>Processor: Intel Core i5 or equivalent</li>
+                <li>Memory: 8 GB RAM</li>
+                <li>Graphics: NVIDIA GTX 970 / AMD Radeon RX 580 or better</li>
+                <li>Storage: 20 GB available space</li>
+                <li>DirectX: Version 11 or later</li>
+            </ul>
+        </section>
+
+        <section class="section" aria-labelledby="overview-heading">
+            <h2 id="overview-heading">Overview</h2>
+            <p>Epic Quest: Dragon’s Legacy offers a rich role-playing experience combining exploration, real-time combat, and crafting. Unlock powerful abilities, build alliances, and unravel ancient secrets to become a <span class="text-highlight">legendary hero</span>.</p>
+        </section>
+
+        <section class="section" aria-labelledby="install-heading">
+            <h2 id="install-heading">How to Install</h2>
+            <pre class="install-code text-white" aria-label="Installation command and instruction">1. Download the installer.
+                    2. Run the setup executable.
+                    3. Follow on-screen instructions.
+                    4. Launch the game from your desktop or start menu.</pre>
+        </section>
+
+        <div class="text-center">
+            <a href="#" class="download-btn" role="button" aria-label="Download Epic Quest game">Download Now</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
